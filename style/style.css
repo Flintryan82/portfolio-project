@@ -1,32 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Parisienne&family=Rye&display=swap');
+
 body {
     background-color: rgb(175, 165, 165);
 }
-.accounts-div {
-    background-color: silver;
-    /* padding: 20px; */
-    margin-bottom: 60px;
-    bottom: 0;
-    position: fixed;
+.heading-container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 40px 0px 40px;
+} 
+.name {
+    /* border: 1px solid black; */
+    margin: 5px;
     width: 100%;
 }
+h1 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+.pages {
+    /* border: 1px solid black; */
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+.accounts-div {
+    background-color: silver;
+    padding: 20px;
+    margin-bottom: 60px;
+    bottom: 0;
+    width: 100%;
+}
+.accounts {
+    /* border: 1px solid black; */
+    align: center;
+}
 .connection-info {
+    text-align: center;
     font-size: 24px;
     color: white;
 }
 .footer {
     background-color: rgb(151, 150, 150);
-    /* margin-top: 2px; */
-    /* padding: 5px; */
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-h1 {
-    float: left;
-    width: 70%;
+.projects-container{
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
 }
-.float-right {
-    float: right;
-    width: 30%;
+.project {
+    margin: 50px;
+}
+.pages a {
+    text-decoration: none;
+    color: black;
 }
