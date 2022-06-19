@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(175, 165, 165);
+}
+.accounts-div {
+    background-color: silver;
+    /* padding: 20px; */
+    margin-bottom: 60px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.connection-info {
+    font-size: 24px;
+    color: white;
+}
+.footer {
+    background-color: rgb(151, 150, 150);
+    /* margin-top: 2px; */
+    /* padding: 5px; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    float: left;
+    width: 70%;
+}
+.float-right {
+    float: right;
+    width: 30%;
+}
