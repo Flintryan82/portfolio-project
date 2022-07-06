@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Parisienne&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Parisienne&family=Roboto:ital,wght@1,300&family=Rye&display=swap');
 
 .background {
-     background-image: url('../img/background-image.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-    
+    background-image: url('../img/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .heading-container {
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px grey;
     display: flex;
     align-items: center;
     /* flex-wrap: wrap; */
@@ -20,58 +22,74 @@
     float: left;
     width: 40%;
 }
+
 .right-box {
     /* border: 1px solid black; */
     float: right;
     width: 60%;
 }
+
 .name {
     margin: 5px;
     width: 100%;
 }
 
 h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Parisienne', cursive;
     letter-spacing: 5px;
-    font-size: 5vw;
+    font-size: 6vh;
+    color: black;
     text-align: center;
 }
 
 .pages {
-    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 5px;
+    font-size: 4vh;
+    font-weight: bold;
     text-align: center;
     margin: 5px;
     width: 100%;
 }
 
 .accounts-div {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px grey;
     background-color: silver;
     padding: 20px;
-    margin-bottom: 60px;
+    margin: 40px;
     bottom: 0;
 }
 
 .accounts {
     display: block;
-    margin-top: 15px;
     text-align: center;
     padding: 10px 0px 10px 0px;
+    margin: 40px;
 }
+
 .connection-info {
     text-align: center;
-    font-size: 24px;
-    color: white;
+    font-size: 4vh;
+    color: black;
 }
 
 .footer {
     /* background-color: rgb(151, 150, 150); */
     text-align: center;
     bottom: 0;
+    font-size: 3vh;
+    color: black;
+    font-weight: bold;
+    margin: 40px;
 }
 
 .projects-container {
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px grey;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -84,7 +102,7 @@ h1 {
 
 .pages a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 .contact-container {
@@ -95,7 +113,8 @@ h1 {
 }
 
 .left-info {
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    box-shadow: 5px 5px 6px grey;
     float: left;
     text-align: center;
     width: 40%;
@@ -103,7 +122,8 @@ h1 {
 }
 
 .right-info {
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    box-shadow: 5px 5px 6px grey;
     float: right;
     width: 40%;
 }
@@ -115,13 +135,15 @@ form {
 
 address {
     font-size: 24px;
+    color: black;
+    font-weight: bold;
     padding-bottom: 20px;
 }
 
 h3 {
     font-family: 'Lobster', cursive;
     letter-spacing: 5px;
-    font-size: 3vw;
+    font-size: 4vh;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -135,8 +157,11 @@ textarea {
     font-weight: bold;
     font-size: 32px;
 }
+
 label {
     padding: 10px 0px 10px 15px;
+    color: black;
+    font-weight: bold;
 }
 
 input[type=submit] {
@@ -158,18 +183,68 @@ input[type=submit] {
         margin-top: 25px;
     }
 
-    .contact-container {
-        display:
+    .heading-container {
+        flex-wrap: wrap;
     }
 
+    .dropdown {}
+}
+
+.background-test {
+    background: rgba(207, 206, 199, 0.35);
+    color: #fff;
+}
+
+.project-header {
+    text-align: center;
+    width: 100vh;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    position: relative;
+}
+
+address a {
+    text-decoration: underline;
+    color: black;
+}
+
+hr {
+    display: block;
+    border-width: 3px;
+    width: 50%;
+}
+
+.page-break {
+    display: block;
+    border-width: 3px;
+    width: 25vh;
+}
+
+@media screen and (max-width: 980px) {
+
     .heading-container {
-         flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
 
 }
 
-.background-test {
-    background: rgba(0, 0, 0, 0.2);
-        color: #fff;
+/* Responsive portfolio images for smaller devices */
+@media screen and (max-width: 900px) {
+
+.project {
+    max-width: 300px;
+    /* height: 300px; */
+}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+.project {
+
+}
+
+
 }
