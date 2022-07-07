@@ -109,7 +109,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .left-info {
@@ -171,25 +170,6 @@ input[type=submit] {
     font-weight: bold;
 }
 
-@media screen and (max-width: 850px) {
-    .left-info {
-        width: 80%;
-        display: inline;
-    }
-
-    .right-info {
-        width: 80%;
-        display: inline;
-        margin-top: 25px;
-    }
-
-    .heading-container {
-        flex-wrap: wrap;
-    }
-
-    .dropdown {}
-}
-
 .background-test {
     background: rgba(207, 206, 199, 0.35);
     color: #fff;
@@ -220,10 +200,45 @@ hr {
     width: 25vh;
 }
 
+.profile-container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 40px 0px 40px;
+}
+
+.my-info {
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .left-info {
+        width: 80%;
+        display: inline;
+    }
+
+    .right-info {
+        width: 80%;
+        display: inline;
+        margin-top: 25px;
+    }
+
+    .heading-container {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 980px) {
 
     .heading-container {
         flex-wrap: wrap;
+    }
+
+    .project img{
+        width: 275px;
     }
 
 
@@ -232,10 +247,7 @@ hr {
 /* Responsive portfolio images for smaller devices */
 @media screen and (max-width: 900px) {
 
-.project {
-    max-width: 300px;
-    /* height: 300px; */
-}
+
 
 
 }
