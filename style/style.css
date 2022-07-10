@@ -100,6 +100,12 @@ h1 {
     margin: 50px;
 }
 
+.project img {
+   
+}
+
+
+
 .pages a {
     text-decoration: none;
     color: black;
@@ -201,30 +207,41 @@ hr {
 }
 
 .profile-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0px 40px 0px 40px;
 }
-
+img {
+    padding: 30px;
+}
 .my-info {
     color: black;
     font-size: 3vh;
     font-weight: bold;
 }
+.my-info:first-letter {
+    /* text-transform: uppercase; */
+    font-size: 5vh;
+}
+
+.tooltiptxt {
+    visibility: hidden;
+    /* width: 200px; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    display: block;
+}
+.tooltip:hover .tooltiptxt {
+    visibility: visible;
+}
+
 
 @media screen and (max-width: 850px) {
-    .left-info {
-        width: 80%;
-        display: inline;
-    }
-
-    .right-info {
-        width: 80%;
-        display: inline;
-        margin-top: 25px;
-    }
 
     .heading-container {
         flex-wrap: wrap;
@@ -236,6 +253,17 @@ hr {
     .heading-container {
         flex-wrap: wrap;
     }
+    
+    .left-info {
+        width: 80%;
+        display: inline;
+    }
+
+    .right-info {
+        width: 80%;
+        display: inline;
+        margin-top: 25px;
+    }
 
     .project img{
         width: 275px;
@@ -245,18 +273,46 @@ hr {
 }
 
 /* Responsive portfolio images for smaller devices */
-@media screen and (max-width: 900px) {
 
+@media screen and (max-width: 550px) {
 
+    .left-info img{
+        width: 165px;
+    }
+    /* .my-info {
+        font-size: 2vh;
+        margin: 0 5px 0 5px;
+    } */
 
-
+    /* .accounts {
+        margin: auto;
+    }
+    .acounts a {
+        width: 20px;
+    }
+    .pages dropdown {
+        a: hide "|";
+    } */
 }
+
 
 @media screen and (max-width: 400px) {
 
-.project {
+    .left-info img{
+        width: 175px;
+    }
+    .my-info {
+        font-size: 2vh;
+        margin: 0 5px 0 5px;
+    }
 
-}
-
-
+    .accounts {
+        margin: auto;
+    }
+    .acounts a {
+        width: 20px;
+    }
+    .pages dropdown {
+        a: hide "|";
+    }
 }
